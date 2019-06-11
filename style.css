@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightgreen;
+    height: 75vh;
+}
+
+.card {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.card-item {
+    background-color: #fff;
+    width: 425px;
+    height: 300px;
+    transition: transform 0.2s;
+    transform: rotateX(20deg);
+}
